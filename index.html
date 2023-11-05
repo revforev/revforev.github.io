@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="My minimalist and youthful web design portfolio">
   <meta name="keywords" content="web design, portfolio, minimalist, youthful">
-  <title>My Portfolio</title>
+  <title>A website about me</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 	<script defer src="app.js"></script>
 </head>
 <body>
-  <header>
+  <header class="bg-light" id="top">
+    <!-- <div class="header-top"> </div> -->
+    <div class="scroll-tracker"> </div>
     <button
         class="theme-switch"
         type="button"
@@ -52,40 +54,162 @@
   </svg>
 </button>
   </header>
+  <section class="introduction">
+    <h1>Andrei Duțulescu</h1>
+    <p class="intro-p">I'm an aspiring web developer. I want to specialize in building accessible and inclusive products, with a particular focus on creative design. This website features my story. <a href="#intro">Begin >></a></p>
+  </section>
+  <section class="bg-accent">
+  <ol>
+    <h3>Contents:</h3>
+    <li>
+      <a href="#intro">Intro.</a>
+    </li>
+    <li>
+      <a href="#work">Work.</a>
+    </li>
+    <li>
+      <a href="#study">Study.</a>
+    </li>
+    <li>
+      <a href="#vision">Vision.</a>
+    </li>
+    <li>
+      <a href="#ethic">Ethic.</a>
+    </li>
+    <li>
+      <a href="#future">Future.</a>
+    </li>
+    <li>
+      <a href="#purpose">Purpose.</a>
+    </li>
+    <li>
+      <a href="#freetime">Free time.</a>
+    </li>
+    <li>
+      <a href="#conclusion">Conclusion.</a>
+    </li>
+  </ol>
+  </section>
 <main>
-  <ul class="flex-container">
+  <ul class="flex-container" id="intro">
        <li class="flex-item">
-           <h2>A six years journey.</h2></li>
-           <button class="peel"></button>
+          <div class="flex-container-icon">
+            <div class="flex-item-icon icon">
+              <img class="icon" src="images/Ladder-start.png" alt="Pixel art icon of a Ladder">
+            </div>
+            <h2 class="flex-item-icon">A six years journey.</h2></li>
+          </div>
        <li class="flex-item"> 
-           <p>I traveled a long way to be here. I left 6 years ago looking to join local music scenes. That's always been my only true compass.</p>
-           <p class="p-display hidden">Cluj, Romania -> Eastbourne -> Brighton -> Bristol -> London. </p>
-           </li>
+           <p>I traveled a long way to be here. I left my hometown 6 years ago looking to form a band. I made my first website to promote my music and eventually stuck to making websites. I've always been into creative things, such as music, writing and visual design. </p>
+           <button class = "peelers" id = "peel1" onclick="peel('peeled1', 'peel1');" aria-label="Ripped paper texture with a peeling corner"> </button>
+           <button class = "peelers hidden" id = "peeled1" onclick="peel('peel1', 'peeled1');" aria-label="Ripped paper post-it background. Each button has a slightly different shape, as the paper is ripped in different ways."> <p class="p-button">I've been doodling on post its <br>since I was 10. </p></button>    
+           <p>Drawing on post its to decorate my room with got me interested in Graphic Design. I went to the visual arts state school in Romania. Then, I studied Engineering Geology. I am somewhat science-minded, so I wanted something to do with science and nature. I graduated and never worked a day as a geologist, but in the years that followed I got back into drawing, making album covers for myself and my friends. <a href="#work">Next >></a></p>   
+          </li>
   </ul>
-  <ul class="flex-container">
+
+  <ul class="flex-container" id="work">
     <li class="flex-item">
-        <h2>I never had a developer job.</h2></li>
-        <button class="peel"></button>
-    <li class="flex-item"> 
-      <p>My dream is to become a UI/UX designer and work alongside people on things that have meaning and share a common purpose. For it I need to learn how to work and move within a colective.</p>
-      <p class="p-display hidden">I have been working in hospitality for a while. I started out as a Kitchen Porter in 2018, moving up to waiter as I got more confident with the language. I stuck to the bartender role since 2021, working all around London. I like getting out of the house and meeting people. I'm fascinated with London and how much it can teach you if you are willing to listen.</p>
-      <p>I can’t do my UI/UX part without knowing how to code. I wouldn’t be able to leave my teammates struggle with a technical problem while I sit around and watch. I’d need to jump in.</p>
-        </li>
+        <img class="icon" src="images/Computer.png" alt="Pixel art icon of a computer">
+        <h2>Work.</h2></li>
+        <li class="flex-item"> 
+      <p>My dream is to become a UI/UX designer and work along people on things that have meaning and purpose. I started noticing around 2018 that people in this field are cool. That made me gravitate towards it. I slowly realized it sits at the perfect intersection of the things I like. I wouldn't mind doing for the rest of my life.</p>
+      <button class = "peelers" id = "peel2" onclick="peel('peeled2', 'peel2');" aria-label="Ripped paper texture with a peeling corner"> </button>
+      <button class = "peelers hidden" id = "peeled2" onclick="peel('peel2', 'peeled2');" aria-label="Ripped paper post-it background. Each button has a slightly different shape, as the paper is ripped in different ways."> <p class="p-button">I worked in hospitality for a while. I started as KP in 2015, moving up to waiter and bartender, working all around town. </p></button>       
+      <p>Working in there taught me a lot about teamwork. About moving within a collective. I can’t imagine doing UI/UX without knowing a bit of code. I wouldn’t be able to leave my colleagues struggle with a technical problem while I sit around and watch. I need to understand what's going on so I could contribute to help them at finding solutions. <a href="#study">Next >></a></p>
+    </li>
 </ul>
-   <ul class="flex-container">
+
+   <ul class="flex-container" id="study">
     <li class="flex-item">
-        <h2>I never had a developer job.</h2></li>
-        <button class="peel"></button>
+      <img class="icon" src="images/Book.png" alt="Pixel art icon of a book">
+        <h2>Study.</h2></li>
     <li class="flex-item"> 
-      <p>My dream is to become a UI/UX designer and work alongside people on things that have meaning and share a common purpose. For it I need to learn how to work and move within a colective.</p>
-      <p class="p-display hidden">I have been working in hospitality for a while. I started out as a Kitchen Porter in 2018, moving up to waiter as I got more confident with the language. I stuck to the bartender role since 2021, working all around London. I like getting out of the house and meeting people. I'm fascinated with London and how much it can teach you if you are willing to listen.</p>
-      <p>I can’t do my UI/UX part without knowing how to code. I wouldn’t be able to leave my teammates struggle with a technical problem while I sit around and watch. I’d need to jump in.</p>
-        </li>
+      <p>I got into development by watching YouTube tutorials and got me a Udemy course for Christmas in 2019. Dubbed "the complete web developer's bootcamp", it made for a good introduction to the realm of coding and it took me some 6 months to complete. Shortly after that I made my first website, which was a typesetting of a fragment from "The Peregrine", a Book by J.A. Baker.</p>
+      <button class = "peelers" id = "peel3" onclick="peel('peeled3', 'peel3');" aria-label="Ripped paper texture with a peeling corner"> </button>
+      <button class = "peelers hidden" id = "peeled3" onclick="peel('peel3', 'peeled3');" aria-label="Ripped paper post-it background. Each button has a slightly different shape, as the paper is ripped in different ways."><p class="p-button">I built two live sites in 2023: <a href="https://erosed.eu/" target="_blank">Eros</a> and <a href="https://freestyle-cooking.org/" target="_blank">Freestyle Cooking</a>. I also designed a recipe app with 4 other developers which is getting released next week!</p></button>          
+      <p>I like reading, so my websites focus on typography and borrow from magazine layouts. I'm a big fan of CSS, so I watched everything from Kevin Powell and Jen Simmons. CSS accessibility articles by Sarah L. Fossheim. Books from Richard Rutter and Ethan Marcotte. A book apart series. I've also used Freecodecamp, Codekata, LinkedIn Learning, Front End Mentor, Just In Mind etc. <a href="#vision">Next >></a></p>
+    </li>
+</ul>
+
+   <ul class="flex-container" id="vision">
+    <li class="flex-item">
+      <img class="icon" src="images/Lightbulb.png" alt="Pixel art icon of a lightbulb">
+        <h2>Vision.</h2></li>
+    <li class="flex-item"> 
+      <p>I like simple things that work well. I want to make sure that the apps and websites I work on are easy, pleasant and exciting. Someone once told me: when you really understand something, you can explain it to anyone in very few words. </p>
+            <button class = "peelers" id = "peel4" onclick="peel('peeled4', 'peel4');" aria-label="Ripped paper texture with a peeling corner"> </button>
+      <button class = "peelers hidden" id = "peeled4" onclick="peel('peel4', 'peeled4');" aria-label="Ripped paper post-it background. Each button has a slightly different shape, as the paper is ripped in different ways."> <p class="p-button">The noise of <br> today's world <br> is enough.</p></button>         
+    <p>I want to create products which are basic in the best way possible. I think the world of technology needs to return to uncomplicated and human solutions, and seek inspiration in nature.<a href="#ethic">Next >></a></p>
+    </li>
+</ul>
+
+   <ul class="flex-container" id="ethic">
+    <li class="flex-item">
+      <img class="icon" src="images/Puzzle.png" alt="Pixel art icon of a piece of puzzle">
+        <h2>Design puzzles.</h2></li>
+    <li class="flex-item"> 
+      <p>Another thing I like is to solve problems. Solving problems is good for practice, and practice is the way to learn everything.</p>
+            <button class = "peelers" id = "peel5" onclick="peel('peeled5', 'peel5');" aria-label="Ripped paper texture with a peeling corner"> </button>
+      <button class = "peelers hidden" id = "peeled5" onclick="peel('peel5', 'peeled5');" aria-label="Ripped paper post-it background. Each button has a slightly different shape, as the paper is ripped in different ways."><p class="p-button three-things">Problems are easy: schedule, backlog, version control, research, debug, solve conflicts. Understand the needs of diverse users.</p></button>         
+      <p>Finding solutions in a team is one of my favourite feelings in the world. It's amazing how much easier it is to see things in a collective, rather than on your own. <a href="#future">Next >></a></p>
+
+    </li>
+</ul>
+
+   <ul class="flex-container" id="future">
+    <li class="flex-item">
+      <img class="icon" src="images/Compass.png" alt="Pixel art icon of a compass">
+        <h2>The future.</h2></li>
+    <li class="flex-item"> 
+      <p>I put a lot of value in being thorough. I can notice a lot in a short time and understand complex mechanisms without much effort.</p>
+             <button class = "peelers" id = "peel6" onclick="peel('peeled6', 'peel6');" aria-label="Ripped paper texture with a peeling corner"> </button>
+      <button class = "peelers hidden" id = "peeled6" onclick="peel('peel6', 'peeled6');" aria-label="Ripped paper post-it background. Each button has a slightly different shape, as the paper is ripped in different ways."><p class="p-button">I like a bit of fine tuning. We live in fast times though. </p></button>        
+      <p>Adopting minimalism has helped me to actually finish projects, because of my tendency to get lost in detail. I'm also forming my eye. Learning back-end technologies helps a lot, because it makes me more realistic. I want to learn more languages and frameworks. I get a lot of ideas every day. I would like to work for a learning platform, contribute to education in some way, or work in UX and Accessibility to make the Web a better place. <a href="#purpose">Next >></a></p>
+    </li>
+</ul>
+
+   <ul class="flex-container" id="purpose">
+    <li class="flex-item">
+      <img class="icon" src="images/Click.png" alt="Pixel art icon of a pointer with the shape of a hand">
+        <h2>Purpose.</h2></li>
+    <li class="flex-item"> 
+      <p>Growing up in Romania in the early 00s, I did not have access to a lot of things technology. Spending days and nights in the internet cafe, I self taught myself the best I could. I created my first website at 12 years old and got into Design around the same age, creating banners for a local Warcraft server in Photoshop. </p>
+             <button class = "peelers" id = "peel7" onclick="peel('peeled7', 'peel7');" aria-label="Ripped paper texture with a peeling corner"> </button>
+      <button class = "peelers hidden" id = "peeled7" onclick="peel('peel7', 'peeled7');" aria-label="Ripped paper post-it background. Each button has a slightly different shape, as the paper is ripped in different ways."><p class="p-button">I got into computers because I wasn't a popular kid.</p></button>        
+      <p>No one should ever be left out of anything - wheter it’s a group, a community or a web app. Building a web that is accessible for everyone is like building roads and railways that connect people, it is more valuable than anything else you could do. <a href="#freetime">Next >></a></p>
+    </li>
+</ul>
+
+   <ul class="flex-container" id="freetime">
+    <li class="flex-item">
+      <img class="icon" src="images/Sunglasses.png" alt="Pixel art icon of a pair of sunglasses">
+        <h2>Passing afternoons.</h2></li>
+    <li class="flex-item"> 
+      <p>I like to listen to music and draw. I enjoy writing and video games. I like 90s-00s and vintage aesthetics. I also like cycling, working out and spending time outside. I think my generation has this mixed media quality - in that we transcend different things we're into.  We draw parallels and gain insights from all sort of unlikely places.</p>
+            <button class = "peelers" id = "peel8" onclick="peel('peeled8', 'peel8');" aria-label="Ripped paper texture with a peeling corner"> </button>
+      <button class = "peelers hidden" id = "peeled8" onclick="peel('peel8', 'peeled8');" aria-label="Ripped paper post-it background. Each button has a slightly different shape, as the paper is ripped in different ways.">
+        <p class="p-button">I have been making music on computers since I was 14 years old.</p></button>         
+        <p>Music, for instance, is based on conversation. Folk songs, horns and percussion bought people the news way before writing. The energy exchange between performers and audience is nothing but pure communication. Combine that essence with Graphics and you get Print. Add Computer Science to that and you get Web Design. It's weird. <a href="#conclusion">Next >></a></p>
+      </li>
+</ul>
+
+   <ul class="flex-container" id="conclusion">
+    <li class="flex-item">
+      <img class="icon" src="images/Phone.png" alt="Pixel art icon of an old landline telephone">
+        <h2>Can't do this alone.</h2></li>
+    <li class="flex-item"> 
+      <p>By now you’re probably thinking about your next cup. Wheter you choose to keep surfing the web or decide to rest your eyes on the scenery outside the window, breathing the fresh cool air and listening to the calm rain.</p>
+             <button class = "peelers" id = "peel9" onclick="peel('peeled9', 'peel9');" aria-label="Ripped paper texture with a peeling corner"> </button>
+      <button class = "peelers hidden" id = "peeled9" onclick="peel('peel9', 'peeled9');" aria-label="Ripped paper post-it background. Each button has a slightly different shape, as the paper is ripped in different ways."> <p class="p-button">People bless the places - Romanian saying. You can't have a place without people. </p></button>        
+      <p>These words have been echoing to me for a while. They explain best why I want to move into Web Design. Thank you for getting this far into my website. I appreciate you took time. Bye now! </p>
+    </li>
 </ul>
 </main>
   
-  <footer>
-   
+  <footer class="bg-lighter">
+    <a class="backtop" href="#top"> </a>			
+   <p>©Andrei Dutulescu 2023</p>
+   <a href="https://www.foundersandcoders.com/">Founders and Coders</a>
   </footer>
 </body>
 </html>

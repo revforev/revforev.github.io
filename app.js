@@ -25,3 +25,29 @@
   if ( ! toggle ) return;
   toggle.addEventListener('click', () => document.body.classList.toggle('vertical'));
 } )();
+
+// Peel Function
+
+function peel(targetElementId, selfElementId) {
+	const targetElement = document.getElementById(targetElementId);
+	const selfElement = document.getElementById(selfElementId);
+  
+	if (!targetElement) {
+	  console.error("Target element with ID " + targetElementId + " not found.");
+	  return;
+	}
+	if (!selfElement) {
+	  console.error("Self element with ID " + selfElementId + " not found.");
+	  return;
+	}
+  
+	// Peel the target element (toggle its visibility)
+	if (targetElement.classList.contains("hidden")) {
+	  targetElement.classList.remove("hidden");
+	} else {
+	  targetElement.classList.add("hidden");
+	}
+  
+	// Hide the self element
+	selfElement.classList.add("hidden");
+  }
